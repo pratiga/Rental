@@ -1,0 +1,51 @@
+.header{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background: rgba($color:white, $alpha: 0.8);
+    box-shadow: 0 0 0 10px whitesmoke;
+    
+}
+.logo{
+    width: 100%;
+    img{
+        width: 150px;
+        height: 100px;
+    }
+}
+.middle-list{
+    display: flex;
+    .list{
+        display: flex;
+        gap: 1.5rem;
+        list-style-type: none;
+        padding-top: 1rem;
+    li{
+        font-size: 19px;
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: 0.6px;
+    }
+    li:hover{
+        color: rgba($color:green, $alpha: 0.9);
+        font-size: 19px;
+    }    
+    
+    }
+}
+.right-list{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    list-style-type: none;
+    padding: 1rem;
+    li{
+        font-size: 19px;
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: 0.6px;
+    }
+ li:hover{
+        color: rgba($color:green, $alpha: 0.9);
+        font-size: 19px;
+    } 
+}
