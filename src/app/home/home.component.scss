@@ -253,6 +253,164 @@ span{
     margin-right: 8px;
 }
 }
+//---------------------------------
+//talk to us
+//-------------------------------
+.talk-to-us{
+   display: grid;
+   grid-template-columns: 50% 50%;
+    width: 90%;
+    margin-top: 3rem;
+   
+    
+}
+.left-box{
+    background: rgba(rgb(0, 3, 24),0.9);
+    color: rgba(white, 0.9);
+    width: 600px;
+    height: 300px;
+    position: relative;
+    bottom: -25px;
+    left: 145px;  
+.details{
+    margin: 6rem 0 0 4rem;
+}
+.title{
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    }
+.description{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 2rem;
+    letter-spacing: 1.2px;
+}
+.find-me{
+    color: yellow;
+    text-decoration: none;
+    font-size: 18px;
+   
+}
+}
 
+.right-box{
+    width: 400px;
+    img{
+        height: 350px; 
+        width: 600px;    
+    }
+}
+
+//market your property
+
+.market-property{
+     background-image: url("../../assets/market3.jpg"),
+     linear-gradient(rgb(7, 18, 28), rgba(255, 255, 255, 0));
+     background-position: center;
+     background-repeat: no-repeat;
+     filter: blur(0.5px);
+     //-webkit-filter: blur(8px);
+     background-size: cover;
+     //backdrop-filter: blur(10px);
+     -webkit-filter: blur(0.5px);
+     background-blend-mode: darken;
+     height: 400px;
+}
+.details{
+    width: 60%;
+    margin: 7rem 3rem 2rem 4rem;
+    color: aliceblue;
+    .title{
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .description{
+        margin-top: 3rem;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .button{
+        margin-top: 3rem;
+        position: relative;
+//     .valuation{
+//         padding: 15px 40px;
+//         font-size: 16px;
+
+//         margin-right: 5px;  
+//         border: none;
+ 
+// }
+//     .learn-more{
+//         padding: 15px 40px;
+//         font-size: 16px;
+//         background: transparent;
+//         margin-left: 8px; 
+//         color: aliceblue;
+//         border-color: white;
+//     }
+    }
+}
+.btn{
+    position: relative;
+    overflow: hidden;
+    padding: 15px 40px;
+    font-size: 16px;
+    margin-right: 10px;
+    background: none;
+    border: 2px solid #817f13;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+.learn-more{
+    color:  #817f13;;
+    border-color: white;
+}
+.valuation{
+    color: #fff;
+}
+.learn-more:hover{
+    color:#fff;   
+}
+.valuation:hover{
+    color:  #817f13;
+}
+.btn:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background:  #817f13;
+    z-index: -1;
+    transition: 0.8s;
+    
+}
+.learn-more::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    -ms-border-radius: 0 0 50% 50%;
+    -o-border-radius: 0 0 50% 50%;
+}
+.valuation::before{
+    bottom: 0;
+    height: 180%;
+    border-radius: 50% 50% 0 0;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    -ms-border-radius: 50% 50% 0 0;
+    -o-border-radius: 50% 50% 0 0;
+}
+.learn-more:hover::before{
+    height: 180%;
+}
+.valuation:hover::before{
+    height: 0%;
+}
 
 
