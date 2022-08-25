@@ -1,0 +1,111 @@
+.introduction{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+   
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 2rem 1rem ;
+.title{
+    font-size: 50px;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+.description{
+    font-size: 20px;
+    
+}
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 2rem;
+    margin: 3rem 4rem;
+.b-research,
+.b-news,
+.b-blog{
+        padding: 0 2rem;
+        width: 25rem;
+        text-align: center;      
+}
+.detail{
+    border-right: 1px solid rgba($color: #000000, $alpha: 0.4) ;
+}
+.b-news{
+    .detail{
+        border: none;
+    }
+}
+
+
+ img{
+    width: 90px;
+    height: 80px;
+}
+ .title{
+     text-transform: uppercase;
+     font-weight: 600px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20px;
+     color: rgba($color: #000000, $alpha: 1.0);
+ }
+ .intro{
+     font-size: 16px;
+     color: rgba($color: #000000, $alpha: 0.5);
+     
+ }
+}
+}
+.research{
+    background-image: url("../../assets/background/bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode:luminosity;
+    height: 400px;
+  
+
+.details{
+    width: 50%;
+    padding: 3rem 0 0 8rem;
+    
+    .title{
+        font-size: 60px;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+        color: aliceblue;
+    }
+    .title::after{
+        display: block;
+        content: "";
+        width: 5rem;
+        height: 1px;
+        margin-top: 1rem;
+        background-color: rgb(246, 237, 237);
+        border: 1px solid rgb(235, 230, 230);
+    }
+    .description{
+       font-size: 18px;
+       font-weight: 500;
+       letter-spacing: 0.8px;
+       word-spacing: 1.5px;
+       color: aliceblue; 
+    }
+    .button{
+        margin-top: 2rem;
+    }
+   .btn{
+       padding: 1rem 1rem;
+   } 
+   .btn1{
+       margin-right: 5px;
+   }
+   .btn2{
+       margin-left: 5px;
+       color: white;
+   }
+}
+}
