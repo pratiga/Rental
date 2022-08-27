@@ -99,13 +99,210 @@
     }
    .btn{
        padding: 1rem 1rem;
-   } 
+       position: relative;
+       overflow: hidden;
+       background: none;
+       transition: 0.8s;
+       
+} 
    .btn1{
        margin-right: 5px;
+       color:white ;
+     
    }
    .btn2{
        margin-left: 5px;
        color: white;
    }
+   .btn1:hover{
+       color: white;
+   }
+   .btn2:hover{
+       color: black;
+   }
+   .btn:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:  #817f13;
+    z-index: -1;
+    transition: 0.8s;
+    transform-origin: 0 0;   
+}
+   .btn2::before{
+    top: 0; 
+    border-radius: 0 0 50% 50%;  
+   }
+   .btn1::before{
+       transform: scaleX(0);
+       -webkit-transform: scaleX(0);
+       -moz-transform: scaleX(0);
+       -ms-transform: scaleX(0);
+       -o-transform: scaleX(0);
+}
+   .btn1:hover:before{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+   .btn2:hover::before{
+       height: 180%;
+     
+   }
 }
 }
+//---------------------//
+//notice//
+//-------------------------/----------------------------------------------//
+.notice{
+  display: grid;
+  grid-template-columns: 50% 50%;
+    width: 83%;
+    
+    margin: 3rem 2rem 2rem 2rem;
+}
+.container{
+    position: relative;
+    height: 500px;
+    
+}
+
+.notice1,
+.container-top{
+    background-image: url(../../assets/background/bg12.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    .invest,
+    .date{
+        color: rgb(220, 180, 48);
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.1px;
+        margin-top: 2rem;   
+    }
+    .invest::after{
+        display: inline-block;
+        content:"";
+        width: 2px;
+        height: 12px;
+        background-color: rgb(220, 180, 48);
+        border: 1px soild rgb(220, 180, 48);
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 400;
+        color: aliceblue;
+        text-transform: capitalize;
+        letter-spacing: 0.01px;
+        margin-top: 2rem;
+    }
+    p{
+        color: aliceblue;
+        font-size: 16px;
+        margin-top: 4rem;
+    }
+    .btn{
+        margin-top: 3rem;
+        padding: 8px;
+        color: rgba(white, 0.8);
+        background: rgb(97, 94, 94);
+        border: none;
+        margin-left: 0.8rem;
+        text-transform: capitalize;
+        
+    } 
+    
+}
+.notice2{
+    display: block;
+    width: 90%;
+    height: 200px;
+    background: rgba($color:white, $alpha: 1);
+    position: absolute;
+    bottom: 80px;
+    margin-left: 2rem;
+    z-index: 1;
+    box-shadow: 1px 0px 1px 1px rgb(211, 201, 201);
+ .note{
+     padding: 1rem;
+     font-size: 18px;  
+ }
+    .read-now{
+        padding: 8px 1rem;
+        text-transform: uppercase;
+        background: white;
+        border: none;
+        box-shadow: 0 1px 2px 1px rgb(193, 176, 176);
+        margin-left: 2rem;
+    }
+}
+.news{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 1rem;
+    width: 90%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.row{
+    display: block;
+    transition:all 0.8s;
+    -webkit-transition:all 0.8s;
+    -moz-transition:all 0.8s;
+    -ms-transition:all 0.8s;
+    -o-transition:all 0.8s;
+}
+.container-top{
+    height: 400px;
+}
+.container-bottom{
+    background-color:rgba(rgb(211, 198, 14), 1);
+    height: 400px;
+    width: 30%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+        .title{
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: capitalize;
+            letter-spacing: 0.01px;
+            text-align: center;
+            padding: 2rem 1rem 1rem 1rem;
+        }
+        h3{
+            padding-left: 1rem;
+            text-transform: uppercase;
+        }
+        p{
+            text-align: center;
+        }
+        .button2{
+            margin-top: 6.5rem;
+            text-align: center;
+        }
+        .btn{
+            width: 40%;
+            padding: 0.7rem;
+            margin-left: 5px;
+            text-align: center;
+        }
+    
+}
+    .row:hover .container-bottom{
+        z-index: 1;
+    }
