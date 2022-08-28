@@ -1,0 +1,85 @@
+.box1{
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+    .title{
+        font-size: 60px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-bottom: 2rem;
+    }
+    .intro{
+        font-size: 20px;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    .book-valuation{
+        display: grid;
+        grid-template-columns: 50% 50%;
+         width: 90%;
+         margin-top: 3rem; 
+     }
+    }
+.box2{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    width: 100%;
+    gap: 1rem;
+    text-align: center;
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+.row{
+    text-align: center;
+    }
+.detail{
+    width: 80%;
+    margin-left: 2rem;
+.title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.intro{
+    padding: 5px;
+    font-size: 18px;
+}
+}
+
+}
+.services{
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 5px;
+        justify-content: center;
+    }
+    .container{
+        background-image: url("../../assets/background/bg12.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 350px;
+    .type{
+        color: rgb(213, 213, 25);
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .title{
+        font-size: 40px;
+        color: aliceblue;
+        font-weight: 500;
+    }
+    .intro{
+        color: aliceblue;
+        font-size: 18px;
+        padding: 2rem;
+    }
+    }
+    
+}
