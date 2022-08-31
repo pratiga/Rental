@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Material+Icons+Outlined");
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+.slider {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.slider .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  outline-style: none;
+}
+.slider .owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: black;
+}
+.slider i {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all ease-in-out 0.3s;
+}
+.slider i:hover {
+  color: white;
+}
+.slider .owl-theme .owl-nav [class*=owl-] {
+  background: transparent;
+}/*# sourceMappingURL=styles.css.map */
