@@ -4,28 +4,45 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-   
+.container-home{
+    background-image: url("../../assets/house/house3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    margin: 0;
+    
+}
    
 
-.slider{
-    width: 100%;
-  
-}
+// .slider{
+//     width: 100%;
+//     display: block;
+// }
 .featured{
     display: flex;
     justify-content: center;
     gap: 8px;
-    flex-wrap: wrap;
-    width: 90%;
+    height: 250px;
     padding: 0;
     margin: 5px;
-    background: rgba(white,0.2);
+    margin-left: 6rem;
+    background: rgba(white,1);
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
+marquee{
+    display: flex;
+    justify-content: center;
+    margin-left: 6rem;
+} 
 .f-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    width: 300px;
     padding: 5px;
     box-shadow: 1px 2px 4px 0px rgb(72, 71, 71);
  
@@ -70,7 +87,6 @@
     padding-top: 10px;
 }
 .title {
-
     font-weight: 700;
     font-size: 18px;
     font-family:  Courier, monospace;
@@ -118,7 +134,7 @@
     width: 50%;
     padding: 1rem 0;
     position: absolute;
-    bottom: 12px;
+    bottom: 2.5rem;
     z-index: 1;   
 }
 .new,
@@ -264,43 +280,7 @@ span{
    
     
 }
-.left-box{
-    background: rgba(rgb(0, 3, 24),0.9);
-    color: rgba(white, 0.9);
-    width: 600px;
-    height: 300px;
-    position: relative;
-    bottom: -25px;
-    left: 145px;  
-.details{
-    margin: 6rem 0 0 4rem;
-}
-.title{
-    font-size: 38px;
-    font-weight: 500;
-    letter-spacing: 0.1px;
-    }
-.description{
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 2rem;
-    letter-spacing: 1.2px;
-}
-.find-me{
-    color: yellow;
-    text-decoration: none;
-    font-size: 18px;
-   
-}
-}
 
-.right-box{
-    width: 400px;
-    img{
-        height: 350px; 
-        width: 600px;    
-    }
-}
 
 //market your property
 
@@ -333,22 +313,8 @@ span{
     .button{
         margin-top: 3rem;
         position: relative;
-//     .valuation{
-//         padding: 15px 40px;
-//         font-size: 16px;
 
-//         margin-right: 5px;  
-//         border: none;
- 
-// }
-//     .learn-more{
-//         padding: 15px 40px;
-//         font-size: 16px;
-//         background: transparent;
-//         margin-left: 8px; 
-//         color: aliceblue;
-//         border-color: white;
-//     }
+
     }
 }
 .btn{
@@ -412,5 +378,97 @@ span{
 .valuation:hover::before{
     height: 0%;
 }
+.latest-properties{
+    margin-top: 1rem;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+.top{
+   display: flex;
+   justify-content: space-between;
+    gap: 45rem;
+    margin: 2rem 0 3rem 0;
+.title{
+     padding: 10px;
+     font-size: 40px;
+     font-weight: 550;
+     text-transform: capitalize;
+     }
+ .view{
+     font-size: 16px;
+     font-weight: 500;
+     padding: 5px 1rem;
+     
+ }
+    }
+.row{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 1rem;
+    justify-content: center;
+}
+    .container{
+        display: block;
+        position: relative;
+        box-shadow: 0 0 1px 1px rgb(236, 233, 233);
+        overflow: hidden;
+    }
+.description{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    position: absolute;
+    top: 8.5rem;
+    width: 90%;
+    color: beige;
+    margin: 0;
+    padding: 0;
+}
+.details{
+    color: #000000;
+    margin: 0;
+    margin-left: 1rem;
+    text-align: start;
+    width: 100%;
+.amount{
+    font-size: 30px;
+    font-weight: 520;
+}
+.name{
+    font-size: 25px;
+    font-weight: 530;
+    margin: 0;
+}
+
+}
+.buttom{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 90%;
+    border-top: 1px solid black;
+    margin: 0;
+    margin-top: 1rem;
+   
+    text-align: center;
+    
+.top{
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 5px;
+}
+.bottom{
+    margin-top: 1rem;
+}
+
+}
+.distance{
+    display: flex;
+}
+
+}
+
 
 
